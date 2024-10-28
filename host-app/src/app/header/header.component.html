@@ -1,0 +1,16 @@
+<header [ngClass]="{'only-logo': !accountIdentified}">
+	<div class="logo">
+	  <img [routerLink]="['/market']" src="assets/images/logo.png" alt="Logo">
+	</div>
+ 
+	<nav *ngIf="accountIdentified" class="nav-links">
+	  <a [routerLink]="['/market/dashboard']">Dashboard</a>
+	  <a [routerLink]="['/market/wallet']">Wallet</a>
+	  <a [routerLink]="['/account/profile']">Profile</a>
+	</nav>
+
+	<nav *ngIf="accountIdentified" class="nav-links">
+		<a [routerLink]="['/account/signin']">Logout</a>
+	</nav>
+
+ </header>
