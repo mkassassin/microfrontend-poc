@@ -31,7 +31,7 @@ module.exports = {
         name: "microAppTwo",
         filename: "remoteEntry.js",
         exposes: {
-            './appModule': './/src/app/app.module.ts',
+            './MarketModule': './src/app/modules/market/market.module.ts',
         },
 
 

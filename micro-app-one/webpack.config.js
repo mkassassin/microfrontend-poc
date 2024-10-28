@@ -31,7 +31,7 @@ module.exports = {
         name: "microAppOne",
         filename: "remoteEntry.js",
         exposes: {
-            './appModule': './src/app/app.module.ts'
+            './AccountModule': './src/app/modules/account/account.module.ts'
         },
 
         shared: share({

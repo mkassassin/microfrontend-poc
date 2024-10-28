@@ -1,2 +1,2 @@
-declare module 'microAppOne/appModule';
-declare module 'microAppTwo/appModule';
+declare module 'microAppOne/AccountModule';
+declare module 'microAppTwo/MarketModule';

@@ -10,12 +10,12 @@ const routes: Routes = [
   {
     path: 'account',
     loadChildren: () =>
-      import('microAppOne/appModule').then((m) => m.AppModule),
+      import('microAppOne/AccountModule').then((m) => m.AccountModule),
   },
   {
     path: 'market',
     loadChildren: () =>
-      import('microAppTwo/appModule').then((m) => m.AppModule),
+      import('microAppTwo/MarketModule').then((m) => m.MarketModule),
   },
 ];
 
